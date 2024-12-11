@@ -1,5 +1,6 @@
 import { UserButton } from "@clerk/clerk-react";
 import { Authenticated } from "convex/react";
+import { ServiceForm } from "./service-form";
 
 export function UserPage() {
   return (
@@ -8,6 +9,8 @@ export function UserPage() {
       <Authenticated>
         <UserButton />
       </Authenticated>
+
+      <ServiceForm />
     </main>
   )
 }
